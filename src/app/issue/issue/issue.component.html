@@ -1,0 +1,32 @@
+
+ <div>
+        <table  mat-table [dataSource]="dataSource">
+           <ng-container matColumnDef="title">
+                <mat-header-cell *matHeaderCellDef [ngClass]= "mat-header-cell"> Title </mat-header-cell>
+                <mat-cell *matCellDef="let issue" [ngClass]= "mat-column-title"> {{issue.title}} </mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="body">
+                <mat-header-cell *matHeaderCellDef [ngClass]= "mat-header-cell"> Body </mat-header-cell>
+                <mat-cell *matCellDef="let issue" [ngClass]= "mat-column-body"> {{issue.body}} </mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="user">
+                <mat-header-cell *matHeaderCellDef [ngClass]= "mat-header-cell"> User Login  </mat-header-cell>
+                <mat-cell *matCellDef="let issue" [ngClass]= "mat-column-user"> {{issue.user.login}} </mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="assignee">
+            <mat-header-cell *matHeaderCellDef [ngClass]= "mat-header-cell"> Assignee Login </mat-header-cell>
+            <mat-cell *matCellDef="let issue" [ngClass]= "mat-column-assignee">
+                <ng-container *ngIf=issue.assignee >
+                    {{ issue.assignee.login }} 
+                </ng-container>
+            </mat-cell>
+          </ng-container>
+          <mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumns;" ></mat-row>
+
+        </table>
+        <mat-paginator fixed [pageSizeOptions]="[10]" [hidePageSize]="true" showFirstLastButtons></mat-paginator>
+        
+      </div> 
+    
+    

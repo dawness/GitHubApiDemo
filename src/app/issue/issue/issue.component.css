@@ -1,0 +1,74 @@
+table {
+    width: 96%;
+    text-align: left !important;
+    table-layout:fixed;
+  }
+  
+
+  .mat-header-row {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: rgb(90, 132, 209);
+    
+}
+
+  .mat-header-cell {
+    text-align: left;
+    border-left: 1px solid grey;
+    border-top: 2px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 2px solid grey;
+  
+  }
+
+
+
+  .mat-column-title {
+    border-left: 1px solid grey;
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 11% !important;
+    align-self: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-overflow: ellipsis;
+  }
+
+  .mat-column-body {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 68% !important;
+    align-self: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-overflow: ellipsis;
+  }
+
+  .mat-column-user {
+    border-right: 1px solid grey;
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 8% !important;
+    align-self: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-overflow: ellipsis;
+  }
+
+  .mat-column-assignee {
+    border-right: 1px solid grey;
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    align-self: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-overflow: ellipsis;
+}
+  
