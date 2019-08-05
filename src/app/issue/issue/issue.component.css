@@ -4,8 +4,7 @@ table {
     table-layout:fixed;
   }
   
-
-  .mat-header-row {
+.mat-header-row {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -21,8 +20,6 @@ table {
     border-bottom: 2px solid grey;
   
   }
-
-
 
   .mat-column-title {
     border-left: 1px solid grey;
